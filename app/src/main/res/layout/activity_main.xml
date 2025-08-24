@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/cmdIncidencies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToIncidencies"
+        android:text="Incidències"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <Button
+        android:id="@+id/cmdAlumnes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alumnes"
+        android:onClick="goToAlumnes"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <Button
+        android:id="@+id/cmdProfessors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Professors"
+        android:onClick="goToProfessors"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <Button
+        android:id="@+id/cmdActuacions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actuacions"
+        android:onClick="goToActuacions"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+
+    <Button
+        android:id="@+id/cmdImportExport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Import/Export"
+        android:onClick="goToImportExport"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <Button
+        android:id="@+id/cmdStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToStats"
+        android:text="Estadístiques"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+
+</LinearLayout>

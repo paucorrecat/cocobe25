@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permisos eliminats per compatibilitat Android 11+ - Scoped Storage -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".act_acc_llista"
+            android:exported="false" />
+        <activity
+            android:name=".act_acc_edita"
+            android:exported="false" />
+        <activity
+            android:name=".act_acc_sel"
+            android:exported="false" />
+        <activity
+            android:name=".act_prf_sel"
+            android:exported="false" />
+        <activity
+            android:name=".act_prf_llista"
+            android:exported="false" />
+        <activity
+            android:name=".act_prf_edita"
+            android:exported="false" />
+        <activity
+            android:name=".act_alu_llista"
+            android:exported="false" />
+        <activity
+            android:name=".act_alu_edita"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".act_alu_sel" />
+        <activity android:name=".act_import_export" />
+        <activity android:name=".act_inc_sel" />
+        <activity android:name=".act_inc_llista" />
+        <activity android:name=".act_inc_edita"  android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".act_stats_sel"/>
+        <activity android:name=".act_stats" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

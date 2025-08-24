@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".act_import_export">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Totes les carpetes a:" />
+
+    <TextView
+        android:id="@+id/txtImpCarpetes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"/>
+    <CheckBox
+        android:id="@+id/chkImpAlumnes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alumnes  (Alumnes.csv)" />
+
+    <CheckBox
+        android:id="@+id/chkImpProfessors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Professors  (Professors.csv)" />
+    <CheckBox
+        android:id="@+id/chkImpIncidencies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incidencies  (Incidencies.csv)" />
+    <CheckBox
+        android:id="@+id/chkImpActuacions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actuacions  (Actuacions.csv)" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/cmdImportar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:onClick="ImportarCSV"
+                android:text="Importar" />
+            <Button
+                android:id="@+id/cmdExportar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginLeft="52dp"
+                android:onClick="ExportarCSV"
+                android:text="Exportar" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="De /Import/*.csv" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="52dp"
+                android:text="A /Export/*.csv" />
+        </TableRow>
+    </TableLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/brown"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cmdCopiaSegDb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:onClick="CopiaSegDb"
+            android:text="Copia Seguretat" />
+
+        <Button
+            android:id="@+id/cmdExportaDb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="ExportaDb"
+            android:text="Exportar dB" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/cmdImportarDb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:onClick="ImportaDb"
+            android:text="Importar Db" />
+        <View
+            android:id="@+id/ledView"
+            android:layout_width="50dp"
+            android:layout_marginLeft ="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/cercle"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/txtEstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Preparat" />
+
+
+</LinearLayout>

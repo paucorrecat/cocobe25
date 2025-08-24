@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".act_stats_sel">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Curs:"
+                            android:textAppearance="@android:style/TextAppearance.Material.Small"
+                            app:textAllCaps="false" />
+
+                        <EditText
+                            android:id="@+id/edtStatsCurs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:text="Curs"
+                            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Codi:"
+                            android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+                        <LinearLayout android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Sí:"
+                                    android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+                                <EditText
+                                    android:id="@+id/edtStatsSiCodi"
+                                    android:layout_width="69dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:imeOptions="actionDone"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="No:"
+                                    android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+                                <EditText
+                                    android:id="@+id/edtStatsNoCodi"
+                                    android:layout_width="69dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:imeOptions="actionDone"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+                        </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Grup:"
+                            android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+                        <LinearLayout android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Sí:"
+                                    android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+                                <EditText
+                                    android:id="@+id/edtStatsSiGrup"
+                                    android:layout_width="69dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:imeOptions="actionDone"
+                                    android:singleLine="true"
+                                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="No:"
+                                    android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+                                <EditText
+                                    android:id="@+id/edtStatsNoGrup"
+                                    android:layout_width="69dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:imeOptions="actionDone"
+                                    android:singleLine="true"
+                                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+                        </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Textes:"
+                            android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="        usar % i _"
+                            android:textAppearance="@android:style/TextAppearance.Material.Small" />
+                </TableRow>
+
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="GoStats"
+                    android:src="@drawable/check_bold"
+                    android:text="Examen" />
+        </LinearLayout>
+
+
+</LinearLayout>

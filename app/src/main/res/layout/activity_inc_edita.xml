@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act_inc_edita">
+
+    <!-- Id -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Id:" />
+
+        <TextView
+            android:id="@+id/txtIncId"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <!-- Grup -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Grup:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtIncGrup"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:text="0" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Data:" />
+
+        <EditText
+            android:id="@+id/edtIncData"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:imeOptions="actionDone"
+            android:keyboardNavigationCluster="false"
+            android:singleLine="true"
+            android:text="Data" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Professor:" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edtIncProfessor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Professor" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Alumne:" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/edtIncAlumne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alumne" />
+
+        <!-- Versió sense ajuda
+        <EditText
+            android:id="@+id/edtIncAlumne"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:imeOptions="actionDone"
+            android:keyboardNavigationCluster="false"
+            android:singleLine="true"
+            android:text="Alumne" />
+        -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Curs:" />
+
+        <EditText
+            android:id="@+id/edtIncCurs"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:imeOptions="actionDone"
+            android:keyboardNavigationCluster="false"
+            android:singleLine="true"
+            android:text="Curs" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Tutor:" />
+
+        <EditText
+            android:id="@+id/edtIncTutor"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:breakStrategy="simple"
+            android:imeOptions="actionDone"
+            android:keyboardNavigationCluster="false"
+            android:singleLine="true"
+            android:text="Tutor" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Estat:" />
+
+        <EditText
+            android:id="@+id/edtIncEstat"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:imeOptions="actionDone"
+            android:keyboardNavigationCluster="false"
+            android:singleLine="true"
+            android:text="Estat" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Obert" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2n Pla" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tancat" />
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Títol:" />
+
+            <ImageButton
+                android:id="@+id/cmdIncVeuTitol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/baseline_mic_24"
+                android:text="mic" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edtIncTitol"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:imeOptions="actionDone"
+            android:keyboardNavigationCluster="false"
+            android:singleLine="true"
+            android:text="Títol" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabIncLayout">
+
+        <!-- Potser no cal ara
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripció" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imatges" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actuacions" />
+         -->
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp2Continguts"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/cmdIncGrava"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_bold"
+            android:onClick="cmd_Ok"
+            android:text="Ok" />
+
+        <ImageButton
+            android:id="@+id/cmdIncCancella"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backup_restore"
+            android:onClick="cmd_Cancella"
+            android:text="Canc." />
+
+        <ImageButton
+            android:id="@+id/cmdIncElim"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/trash_can_outline"
+            android:onClick="cmd_Elimina"
+            android:text="Elim" />
+
+        <ImageButton
+            android:id="@+id/cmdIncAnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_bold"
+            android:onClick="cmd_Ant"
+            android:text="Ant" />
+
+        <ImageButton
+            android:id="@+id/cmdIncSeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right_bold"
+            android:onClick="cmd_Seg"
+            android:text="Seg" />
+
+    </LinearLayout>
+</LinearLayout>

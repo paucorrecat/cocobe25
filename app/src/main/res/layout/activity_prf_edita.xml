@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act_prf_edita">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Codi:" />
+
+            <TextView
+                android:id="@+id/txtPrfEdtCodi"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="0" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Nom:" />
+
+                <EditText
+                    android:id="@+id/edtPrfEdtNom"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionDone"
+                    android:keyboardNavigationCluster="false"
+                    android:singleLine="true"
+                    android:text="Nom" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Estat:" />
+
+                <EditText
+                    android:id="@+id/edtPrfEdtEstat"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionDone"
+                    android:keyboardNavigationCluster="false"
+                    android:singleLine="true"
+                    android:text="Estat" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Cgnm1:" />
+
+                <EditText
+                    android:id="@+id/edtPrfEdtCognom1"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionDone"
+                    android:keyboardNavigationCluster="false"
+                    android:singleLine="true"
+                    android:text="Cognom1" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Cgnm2:" />
+
+                <EditText
+                    android:id="@+id/edtPrfEdtCognom2"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionDone"
+                    android:keyboardNavigationCluster="false"
+                    android:singleLine="true"
+                    android:text="Cognom2" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="eMail:" />
+
+                <EditText
+                    android:id="@+id/edtPrfEdteMail"
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionDone"
+                    android:singleLine="false"
+                    android:text="" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Rola:" />
+
+                <EditText
+                    android:id="@+id/edtPrfEdtRols"
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionDone"
+                    android:singleLine="false"
+                    android:text="" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Observ.:" />
+
+                <EditText
+                    android:id="@+id/edtPrfEdtObservacions"
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionDone"
+                    android:singleLine="false"
+                    android:text="" />
+
+            </TableRow>
+        </TableLayout>
+
+
+        <FrameLayout
+            android:id="@+id/FragmentImatges"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cmdPrfEdtGrava"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:onClick="cmd_Prf_Ok"
+                android:src="@drawable/check_bold"
+                android:text="Ok" />
+
+            <ImageButton
+                android:id="@+id/cmdPrfEdtCancella"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:onClick="cmd_Prf_Cancella"
+                android:src="@drawable/backup_restore"
+                android:text="Canc." />
+
+            <ImageButton
+                android:id="@+id/cmdPrfEdtElim"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:onClick="cmd_Prf_Elimina"
+                android:src="@drawable/trash_can_outline"
+                android:text="Elim" />
+
+            <ImageButton
+                android:id="@+id/cmdPrfEdtAnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="cmd_Prf_Ant"
+                android:src="@drawable/arrow_left_bold"
+                android:text="Ant" />
+
+            <ImageButton
+                android:id="@+id/cmdPrfEdtSeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="cmd_Prf_Seg"
+                android:src="@drawable/arrow_right_bold"
+                android:text="Seg" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

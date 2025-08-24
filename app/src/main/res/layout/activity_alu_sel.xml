@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act_alu_sel">
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="AluBusca"
+            android:src="@drawable/magnify"
+            android:text="Busca" />
+    </LinearLayout>
+    -->
+
+
+    <ImageButton
+        android:id="@+id/btnBusca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:onClick="AluBusca"
+        android:src="@drawable/magnify"
+        android:text="Busca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="385dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBusca">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Id:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <LinearLayout android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edtAluCodi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="0"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="AluCrea"
+                android:src="@drawable/account_plus"
+                android:text="AluCrea"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Nom:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/edtAluNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Nom"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Cognom 1:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/edtAluCognom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Cognom 1"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Cognom 2:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/edtAluCognom2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Cognom 2"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Curs:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/edtAluCurs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Curs"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Observacions:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/edtAluObs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Observacions"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Contacte:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/edtAluCont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Contacte"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Amb Incidencies:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <LinearLayout android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkAluSiInc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:checked="false"
+                    android:text="Sí" />
+
+                <CheckBox
+                    android:id="@+id/chkAluNoInc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:checked="false"
+                    android:text="No" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Ordre:" />
+
+            <RadioGroup
+                android:id="@+id/grpOrdre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radNom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom " />
+
+                <RadioButton
+                    android:id="@+id/radCognom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cgnm1" />
+
+                <RadioButton
+                    android:id="@+id/radCurs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Curs" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOTA:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sempre afegeix % al final"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="usar _ per comodí 1 caracter"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

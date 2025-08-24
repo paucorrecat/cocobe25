@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act_acc_sel">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/btnBusca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:onClick="AccBusca"
+            android:src="@drawable/magnify"/>
+
+        <LinearLayout
+            android:id="@+id/layCodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Id:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/selAccId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="0"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="AccCrea"
+                android:src="@drawable/account_plus"
+                android:text="AccCrea"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="385dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layCodi">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Data des de:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <LinearLayout>
+                <CheckBox
+                    android:id="@+id/selAccDesdeSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </CheckBox>
+                <EditText
+                    android:id="@+id/selAccDataDesde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:text="2024-09-01"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Data fins:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <LinearLayout>
+                <CheckBox
+                    android:id="@+id/selAccFinsSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </CheckBox>
+                <EditText
+                    android:id="@+id/selAccDataFins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:text="2024-09-01"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Pendent:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/selAccPendentSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí:">
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/selAccPendentNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No:">
+
+                </CheckBox>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Tipus:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/selAccTipus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Tipus"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Títol:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/selAccTitol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Títol"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Professor:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/selAccProfessor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Professor"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Alumne:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/selAccAlumne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Alumne"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Pares:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/selAccPares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Pares"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Descripció:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <EditText
+                android:id="@+id/selAccDescripcio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:text="Descripcio"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Ordre:" />
+
+            <RadioGroup
+                android:id="@+id/grpOrdre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data " />
+
+                <RadioButton
+                    android:id="@+id/radId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Codi" />
+
+                <RadioButton
+                    android:id="@+id/radTipus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipus" />
+
+
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOTA:"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sempre afegeix % al final"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="usar _ per comodí 1 caracter"
+                android:textAppearance="@android:style/TextAppearance.Material.Small" />
+        </TableRow>
+
+
+    </TableLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
